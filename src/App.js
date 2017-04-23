@@ -49,17 +49,11 @@ class App extends React.Component {
             // if city not defined
             if(this.state.cityName === ''){
                 this.setState({cityName: '-'});
-                this.setState(
-                    {sys: 
-                        {
-                            country: '-'
-                        }
-                    }
-                );
+                this.setState({sys:{country: '-'}});
                 item['main'] = '-';
                 item['description'] = '-';
-                this.state.main.temp = 273;
-                this.state.main.humidity = 0;
+                this.setState({main:{temp: '273'}})
+                this.setState({main:{humidity:0}})
             }
             return <div className="weather-main">
                         <h1>City: {this.state.cityName.capitalizeFirstLetter()}, {this.state.sys.country}</h1>
