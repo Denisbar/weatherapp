@@ -47,7 +47,7 @@ class App extends React.Component {
     render() {
         const weather = this.state.weather.map((item) => {
             // if city not defined
-            if(this.state.cityName == ''){
+            if(this.state.cityName === ''){
                 this.state.cityName = '-';
                 this.state.sys.country = '-';
                 item['main'] = '-';
