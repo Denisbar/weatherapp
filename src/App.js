@@ -49,7 +49,13 @@ class App extends React.Component {
             // if city not defined
             if(this.state.cityName === ''){
                 this.setState({cityName: '-'});
-                this.state.sys.country = '-';
+                this.setState(
+                    {sys: 
+                        {
+                            country: '-'
+                        }
+                    }
+                );
                 item['main'] = '-';
                 item['description'] = '-';
                 this.state.main.temp = 273;
