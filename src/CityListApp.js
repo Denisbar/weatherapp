@@ -1,4 +1,5 @@
 import React from 'react';
+import CityList from '../src/CityList';
 
 class CityListApp extends React.Component {
     constructor(props) {
@@ -44,7 +45,7 @@ class CityListApp extends React.Component {
     }
 }
 
-class CityList extends React.Component {
+/*class CityList extends React.Component {
     delete(id){
         this.props.delete(id);
     }
@@ -58,6 +59,6 @@ class CityList extends React.Component {
             </ul>
         );
     }
-}
+}*/
 
 export default CityListApp;
