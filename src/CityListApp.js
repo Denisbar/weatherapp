@@ -40,7 +40,7 @@ class CityListApp extends React.Component {
 
     delete(id){
         let items = this.state.items;
-        items = items.filter(item => item != id );
+        items = items.filter(item => item !== id );
         this.setState({items});
     }
 }
