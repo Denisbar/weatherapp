@@ -15,7 +15,7 @@ class App extends React.Component {
             weather: [],
             sys: [],
             main: [],
-            cityName: 'London'
+            cityName: 'Odessa'
         };
     }
 
@@ -69,8 +69,8 @@ class App extends React.Component {
                     <h3>Temp: {(this.state.main.temp - tempConvert).toFixed(1)}&deg;</h3>
                     <h3>Humidity: {this.state.main.humidity}%</h3>
                     <CityListApp
-                        name = {this.state.cityName.capitalizeFirstLetter()}
-                        t = {(this.state.main.temp - tempConvert).toFixed(1)} />
+                        name={this.state.cityName.capitalizeFirstLetter()}
+                        t={(this.state.main.temp - tempConvert).toFixed(1)} />
                 </div>
     }
 }
