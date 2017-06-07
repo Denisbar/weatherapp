@@ -1,12 +1,16 @@
 import React from 'react';
-import CityList from '../src/CityList';
+import CityList from '../components/CityList';
+import { Button } from 'react-bootstrap';
 
 class CityListApp extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.state = {items: [], text: ''};
+        this.state = {
+            items: [],
+            text: '',
+        };
     }
 
     render() {
@@ -16,7 +20,7 @@ class CityListApp extends React.Component {
                     items={this.state.items}
                     delete={this.delete.bind(this)} />
                 <form onSubmit={this.handleSubmit}>
-                    <button>{'Add => ' + this.props.name}</button>
+                    <button>{'Compare ' + this.props.name}</button>
                 </form>
             </div>
         );
@@ -44,21 +48,5 @@ class CityListApp extends React.Component {
         this.setState({items});
     }
 }
-
-/*class CityList extends React.Component {
-    delete(id){
-        this.props.delete(id);
-    }
-    render() {
-        return (
-            <ul>
-                {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}&deg;
-                        <button className="delBtn" onClick={this.delete.bind(this, item)}>Delete</button></li>
-                ))}
-            </ul>
-        );
-    }
-}*/
 
 export default CityListApp;
