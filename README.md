@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-<img src="https://www.dropbox.com/s/rb6vs7z0rftg29q/weatherapp.gif?dl=0" title="App">
+This project is weather forecast web application build with ReactJS
+## DEMO
+
+![weatherapp](https://user-images.githubusercontent.com/7074063/26872873-be0aad0c-4b80-11e7-95c8-e29074dacc1e.gif)
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
